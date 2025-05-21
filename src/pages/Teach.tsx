@@ -49,23 +49,7 @@ const Teach = () => {
           </div>
         </section>
         
-        {/* Statistics section */}
-        <section className="py-16 bg-gray-50 rounded-xl my-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-2" style={{ color: COLORS.primary }}>5,000+</h2>
-              <p className="text-gray-700">Active students</p>
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-2" style={{ color: COLORS.primary }}>500+</h2>
-              <p className="text-gray-700">Courses available</p>
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-2" style={{ color: COLORS.primary }}>₨25M+</h2>
-              <p className="text-gray-700">Instructor earnings</p>
-            </div>
-          </div>
-        </section>
+        {/* Statistics section removed */}
         
         {/* New Carousel Section for Academic Subjects */}
         <section className="py-16">

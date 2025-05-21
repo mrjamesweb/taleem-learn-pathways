@@ -118,8 +118,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-                alt="Person teaching online"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                alt="Students learning in a classroom"
                 className="rounded-lg shadow-xl w-full"
               />
             </div>
