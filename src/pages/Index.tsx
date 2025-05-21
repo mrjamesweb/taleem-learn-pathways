@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,8 +16,7 @@ const Index = () => {
                 Taleem: Learn anytime, anywhere
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Enhance your skills with expert-led courses for Metric, Intermediate, O Level and A Level students. 
-                Start your learning journey today.
+                Explore Affordable Metric/Intermediate and O/A Level courses designed for students in Pakistan. Start your learning journey today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/signup">
@@ -34,9 +32,9 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-                alt="Student learning" 
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                alt="Student learning with a laptop"
                 className="rounded-lg shadow-xl w-full"
               />
               <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
@@ -56,7 +54,7 @@ const Index = () => {
               Why Choose Taleem?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We provide the best learning experience for Pakistani students
+              Taleem is Pakistan's first dedicated cheapest Mass Open Online Course (MOOC) platform focused on affordable exam prep for Metric/Inter and O/A Level students. Our mission is to give students access to top-quality courses from top-quality instructors from all over Pakistan at an optimal cost.
             </p>
           </div>
           
@@ -69,7 +67,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Curated Content</h3>
               <p className="text-gray-600">
-                Courses created specifically for Pakistani education systems - Metric/Intermediate and O/A Levels.
+                Course created specifically for Metric/Intermediate and O/A Level students.
               </p>
             </div>
             
@@ -119,9 +117,9 @@ const Index = () => {
         <section className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                alt="Teach on Taleem" 
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                alt="Person teaching online"
                 className="rounded-lg shadow-xl w-full"
               />
             </div>
@@ -130,8 +128,7 @@ const Index = () => {
                 Become an Instructor
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Share your knowledge with students across Pakistan. Create courses for Metric/Intermediate or O/A Level 
-                students and help shape the future of education.
+                Share your knowledge with students across Pakistan and earn passive income. Create courses for Metric/Intermediate and/or O/A Level students and help shape the future of millions.
               </p>
               <Link to="/teach">
                 <Button size="lg" style={{ backgroundColor: COLORS.primary }}>
