@@ -1,9 +1,22 @@
-
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { COLORS } from "@/lib/constants";
 import PageLayout from "@/components/layout/PageLayout";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const carouselImages = [
+  { src: "https://images.unsplash.com/photo-1426604966848-d7adac402bff", alt: "Subjects like History or Geography", description: "Explore the chronicles of the past and wonders of the world." },
+  { src: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07", alt: "Subjects like Biology or Chemistry", description: "Uncover the secrets of life and the building blocks of matter." },
+  { src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb", alt: "Subjects like Physics or Astronomy", description: "Journey through the cosmos and understand the laws of the universe." },
+  { src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", alt: "Challenging academic subjects", description: "Conquer complex concepts and reach new academic heights." },
+];
 
 const Teach = () => {
   return (
@@ -17,7 +30,7 @@ const Teach = () => {
                 Come teach with us
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Become an instructor and change lives — including your own. Share your knowledge 
+                Become an instructor and change lives — including your own. Share your knowledge
                 with students across Pakistan through interactive courses.
               </p>
               <Link to="/signup?role=instructor">
@@ -27,10 +40,10 @@ const Teach = () => {
               </Link>
             </div>
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                alt="Teach on Taleem" 
-                className="rounded-lg shadow-xl w-full"
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                alt="Instructors collaborating with students"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </div>
           </div>
@@ -52,6 +65,46 @@ const Teach = () => {
               <p className="text-gray-700">Instructor earnings</p>
             </div>
           </div>
+        </section>
+        
+        {/* New Carousel Section for Academic Subjects */}
+        <section className="py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: COLORS.primary }}>
+              Inspire Across Diverse Subjects
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Share your expertise in a variety of fields and help students discover their passion.
+            </p>
+          </div>
+          <Carousel
+            className="w-full max-w-3xl mx-auto"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {carouselImages.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <div className="p-1">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-56 object-cover"
+                      />
+                      <div className="p-4">
+                        <p className="text-gray-700 text-sm">{image.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 ml-[-10px] md:ml-[-40px] z-10 bg-white/80 hover:bg-white text-primary" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 mr-[-10px] md:mr-[-40px] z-10 bg-white/80 hover:bg-white text-primary" />
+          </Carousel>
         </section>
         
         {/* Benefits section */}
