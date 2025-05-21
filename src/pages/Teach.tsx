@@ -12,10 +12,26 @@ import {
 } from "@/components/ui/carousel";
 
 const carouselImages = [
-  { src: "https://images.unsplash.com/photo-1426604966848-d7adac402bff", alt: "Subjects like History or Geography", description: "Explore the chronicles of the past and wonders of the world." },
-  { src: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07", alt: "Subjects like Biology or Chemistry", description: "Uncover the secrets of life and the building blocks of matter." },
-  { src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb", alt: "Subjects like Physics or Astronomy", description: "Journey through the cosmos and understand the laws of the universe." },
-  { src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05", alt: "Challenging academic subjects", description: "Conquer complex concepts and reach new academic heights." },
+  { 
+    src: "https://images.unsplash.com/photo-1509062522106-8a044c093c53", 
+    alt: "Students learning in a classroom setting", 
+    description: "Interactive lessons designed for young, curious minds." 
+  },
+  { 
+    src: "https://images.unsplash.com/photo-1509228468518-180dd486f085", 
+    alt: "Chalkboard with colorful mathematical equations", 
+    description: "Discover the fun in mathematics with engaging problems and activities." 
+  },
+  { 
+    src: "https://images.unsplash.com/photo-1491841550275-501afe219db5", 
+    alt: "Children sitting together reading books", 
+    description: "Explore the world of English and literature through captivating stories." 
+  },
+  { 
+    src: "https://images.unsplash.com/photo-1574680096145-f84a884aa9d6", 
+    alt: "Young student excited about a science experiment", 
+    description: "Ignite passion for science with hands-on experiments and discovery." 
+  },
 ];
 
 const Teach = () => {

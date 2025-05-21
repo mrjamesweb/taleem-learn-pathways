@@ -31,13 +31,22 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                alt="Student learning with a laptop"
-                className="rounded-lg shadow-xl w-full"
-              />
-              <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+            <div className="relative h-80 md:h-96 rounded-lg shadow-xl overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                poster="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop" // Fallback poster
+              >
+                <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4" type="video/mp4" />
+                {/* A more relevant video of students learning is used here */}
+                Your browser does not support the video tag.
+              </video>
+              {/* Optional overlay if text needs to be directly on video for contrast */}
+              {/* <div className="absolute inset-0 bg-black/30 z-10"></div> */}
+              <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block z-20">
                 <div className="flex items-center gap-2">
                   <div className="bg-green-500 rounded-full h-3 w-3"></div>
                   <span className="text-sm font-medium">5,000+ Students Learning Now</span>
